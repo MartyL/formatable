@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+
+<!--
+
+						Form A Table Display Sample Screen
+						Copyright Face 2 Interface Inc.
+						Marty Landman
+
+		2004-02-20	Release 1.0
+		2006-07-09	Release 1.21   add support for Mysql DB
+
+-->
+
+<html>
+
+<head>
+	<link rel=stylesheet type="text/css" media="screen" href="/style/FormATable.css">
+	<title>FormATable Display</title>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+	<meta http-equiv="expires" content="-1">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta name="robots"      content="all">
+	<meta name="description" content="Form A Table Form screen by http://face2interface.com/.">
+	<meta name="keywords"    content="web, website, web design, web programming, Perl,CGI, PHP, Mysql, Oracle, SQL, cookies, HTML, shopping carts, ecommerce, SIMPL, CMS, Site Information Manager, content management, content management, SIMPL.">
+	<meta name="author"      content="Marty Landman, Face 2 Interface Inc.">
+</head>
+
+<body>
+<center>
+
+<h1>Form A Table Database Page</h1>
+
+<table width="95%" border="0" cellspacing="10" cellpadding="0">
+	<tr>
+		<td valign="top">
+			<form method="post" action="/cgi-bin/FormATable/index.cgi?display">
+			<table width="100%" cellpadding="10" cellspacing="3" border="0">
+				<tr>
+					<td align="center"><a 
+						href="/FormATable/"><img 
+						src="/Images/back.gif" width="110" height="30" border="0" 
+						alt="Back to FormATable data entry page"></a>
+					</td>
+				</tr>
+				<tr>
+					<th align="center">Search Our Database</th>
+				</tr>
+				<tr>
+					<td align="center">
+						<select name="search">
+							<option value="name">Name
+							<option value="email">Email
+							<option value="location">Location
+							<option value="referer">Came From
+							<option value="comments">Comments
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td align="left"><input type="text" name="value">
+						<br>value to search for 
+						<br><font size="-1">(use * for wild card)</font></td>
+				</tr>
+				<tr>
+					<td align="center"><input type="submit" value="Search DB"></td>
+				</tr>
+			</table>
+			</form>
+		</td>
+		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		<td>
+			<table width="100%" border="0" cellspacing="0" cellpadding="5">
+				<tr>
+					<th align="center">Name
+						<a href="/cgi-bin/FormATable/index.cgi?display&amp;sort=name"><img 
+							src="/Images/sort.gif" 
+							width="20" height="16" border="0" alt="sort by Name"></a></th>
+					<th align="center">Email
+						<a href="/cgi-bin/FormATable/index.cgi?display&amp;sort=email"><img 
+							src="/Images/sort.gif" 
+							width="20" height="16" border="0" alt="sort by Email"></a></th>
+					<th align="center">Location
+						<a href="/cgi-bin/FormATable/index.cgi?display&amp;sort=location"><img 
+							src="/Images/sort.gif" 
+							width="20" height="16" border="0" alt="sort by Location"></a></th>
+					<th align="center">Came From
+						<a href="/cgi-bin/FormATable/index.cgi?display&amp;sort=referer"><img 
+							src="/Images/sort.gif" 
+							width="20" height="16" border="0" alt="sort by Came From"></a></th>
+					<th align="center">Comments
+						<a href="/cgi-bin/FormATable/index.cgi?display&amp;sort=comments"><img 
+							src="/Images/sort.gif" 
+							width="20" height="16" border="0" alt="sort by Comments"></a></th>
+				</tr>
+				<tr>
+					<td colspan="5"><hr></td>
+				</tr>
+				<!-- start entry -->
+				<tr>
+					<td>###name###</td>
+					<td>###email###</td>
+					<td>###location###</td>
+					<td>###referer###</td>
+					<td>###comments###</td>
+				</tr>
+				<!-- end entry -->
+				<tr>
+					<td colspan="5"><hr></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<p id="copyRt">FormATable V1.2 &copy; 2004-2006 <a href="http://face2interface.com">Face 2 Interface Inc.</a></p>
+</center>
+</body>
+</html>

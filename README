@@ -1,0 +1,96 @@
+
+*----------------------------------------------------------------------------------*
++                                                                                  +
++         Form A Table V1.3 : Display Form Data On a Searchable Template           +
++                                                                                  +
++                   Written by Marty Landman/Face 2 Interface Inc.                 +
++                                                                                  +
++   2004-02-25	Release 1.0                                                         +
++   2004-03-25	Release 1.1                                                         +
++   2004-04-23	Release 1.2                                                         +
++   2006-07-09	Release 1.21   add support for Mysql DB, validate HTML              +
++                                                                                  +
++  This software is distributed under the terms of the GNU Public License.         +
++  See the License.txt file, included with the software. Among other things,       +
++  you are permitted to freely use this product so long as you                     +
++                                                                                  +
++	1. leave all comments intact                                                    +
++	2. agree to hold Marty Landman and Face 2 Interface Inc. harmless from any      +
++		consequence of using this script                                             +
++	3. this software comes as is with no warrantee of fitness for any purpose       +
++                                                                                  +
+*----------------------------------------------------------------------------------*
+
+Support is available on our bulletin board on the web at http://bbs.face2interface.com/.
+
+You may contact us through http://face2interface.com/Contact/Email_Us.shtml if you would 
+like to let us know that you're using the script. All support requests and questions should 
+go through the BBS.
+
+For more information about Face 2 Interface's products and other services, to 
+take a quiz, read a quote or play with our interactive features see us on the 
+web at http://www.face2interface.com/.
+
+
+Installing Manually:
+--------------------
+
+There are several different parts to this application. All paths are relative to your site's
+root path. For more help please use the BBS http://bbs.face2interface.com/.
+
+**note http://face2interface.com/cgi-bin/FormATable/index.cgi?display is the link to display
+
+
+Script Changes:
+---------------
+
+1)	index.cgi
+
+#!/usr/local/bin/perl		this is the path to Perl on your server; change it if necessary
+use lib '###root path###/perllib/FormATable';		replace with the server root path
+
+2)	FormATable.pm
+
+use Flat();			# or
+use DB();
+
+One of these two lines should be removed or commented out. Depends on whether you have available
+a Mysql database to use for the FormATable application or not. If not, use Flat(); which will 
+store the data on a flat file.
+
+my $db	= new Flat;		# or
+my $db	= new DB;
+
+Keep the one needed, so that it matches the 'use' line above.
+
+
+
+	&Utl::sendMail
+	({	
+		to		=>	'marty',
+		from	=> 'Face 2 Interface', 
+		subj	=> "$ENV{HTTP_HOST} FormATable Entry Added",
+		body	=> $msg 													
+	})
+
+These lines will create an email notifying you when new data has been added. Adjust as needed.
+
+
+3)	DB.pm - if you use a Mysql database then this line must be changed appropriately
+
+my $dbh = DBI->connect('DBI:mysql:FormATable:localhost','formatable','secret-password')
+
+
+4)	Utl.pm - change the root path, same as you did  on index.cgi
+
+sub root { '###root path###/' }				#	root server path
+
+my $mail = '/usr/local/bin/sendmail'; - change to your server's path to sendmail, if different
+
+
+
+In addition you may wish to modify the meta-tags for description, keywords, and author.
+The form is now set up with a small number of commonly used fields which may be changed
+in any way you see fit. There is also CSS in an external stylesheet which you may wish to
+change to fit more into your own site's layout.
+

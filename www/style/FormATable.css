@@ -1,0 +1,43 @@
+
+body, td, p {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	font: 12px verdana, arial, helvetica, sans-serif
+}
+
+h1 {
+	text-align: center;
+	font: bold
+}
+
+a {
+	color:#000;
+	text-decoration: underline
+}
+
+td#quote {
+	padding: 2px;
+	text-align: center;
+	font-size: 11px;
+	border: 1px #03c dotted
+}
+
+a:hover {
+	color:#f00
+}
+
+a.nav {
+	text-align: center;
+	text-decoration: none;
+	color:#fff;
+	font-weight: bold;
+	font-size: 10px
+}
+
+p#copyRt {
+	padding: 12px;
+	font-weight: bold;
+	font-size: 9px;
+	text-align: center
+}

@@ -1,0 +1,17 @@
+
+/*
+      Create the FormATable Table
+      07-07-06   Marty Landman/Face 2 Interface
+*/
+
+drop table if exists FormATable;
+
+create table FormATable (
+   id                      int unsigned          not null,
+   name                    varchar(50),
+   email                   varchar(50),
+   location                varchar(35),
+   referer                 varchar(50),
+	comments                text,
+   primary key(id)
+);

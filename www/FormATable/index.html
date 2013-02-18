@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+
+<!--
+
+						Form A Table Form Example Screen
+						Copyright Face 2 Interface Inc.
+						Marty Landman
+
+		2004-02-20	Release 1.0
+
+-->
+
+<html>
+
+<head>
+	<link rel=stylesheet type="text/css" media="screen" href="/style/FormATable.css">
+	<title>Form A Table</title>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+	<meta http-equiv="expires" content="-1">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta name="robots"      content="all">
+	<meta name="description" content="Form A Table Form screen by http://face2interface.com/.">
+	<meta name="keywords"    content="web, website, web design, web programming, Perl,CGI, PHP, Mysql, Oracle, SQL, cookies, HTML, shopping carts, ecommerce, SIMPL, CMS, Site Information Manager, content management, content management, SIMPL.">
+	<meta name="author"      content="Marty Landman, Face 2 Interface Inc.">
+</head>
+
+<body>
+<center>
+
+<h1>Form A Table Demo Page</h1>
+
+<form method="post" action="/cgi-bin/FormATable/index.cgi">
+<input type="hidden" name="required" value="name,email">
+<table width="100%" cellpadding="0" cellspacing="13" border="0">
+	<tr>
+		<td width="2%">&nbsp; &nbsp; &nbsp; </td>
+		<td align="left" width="18%">
+			<p><font size="-1"><img src="/Images/reqFld.gif" width="17"
+				height="17" border="0" alt="required field">fields are required</font></p>
+			<p><!--__validation-->&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p><a
+				href="/cgi-bin/FormATable/index.cgi?display"><img
+				src="/Images/back.gif" width="110" height="30" border="0"
+				alt="FormATable display page"></a></p></td>
+		<td bgcolor="#000000" width="1" height="100%"><img
+			src="/Images/dotclear.gif" border="0" alt="" width="1" height="1"></td>
+		<td align="center" width="60%">
+			<table cellpadding="5" cellspacing="3" border="0">
+				<tr>
+					<th align="center" colspan="2">Please Enter Information For Our Database</th>
+				</tr>
+				<tr>
+					<td align="right"><img src="/Images/reqFld.gif" width="17"
+						height="17" border="0" alt="required field">Full Name</td>
+					<td align="left"><input type="text" name="name" size="40" maxlength="50"></td>
+				</tr>
+				<tr>
+					<td align="right"><img src="/Images/reqFld.gif" width="17"
+						height="17" border="0" alt="required field">Email Address</td>
+					<td align="left"><input type="text" name="email" size="40" maxlength="50"></td>
+				</tr>
+				<tr>
+					<td align="right">Geographic Location
+						<br> <font size="-2">(e.g. city, state/province, country)</font></td>
+					<td align="left"><input type="text" name="location" size="40" maxlength="35"></td>
+				</tr>
+				<tr>
+					<td align="right">How Did You Find Us?</td>
+					<td align="left"><input type="text" name="referer" size="40" maxlength="50"></td>
+				</tr>
+				<tr>
+					<td align="right">Comments</td>
+					<td align="left"><textarea name="comments" cols="30" rows="5"></textarea></td>
+				</tr>
+				<tr>
+					<td align="center" colspan="2"><input type="submit" value="Add to DB"></td>
+				</tr>
+			</table>
+		</td>
+		<td align="right" width="20%">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td>
+	</tr>
+</table>
+</form>
+
+<p id="copyRt">FormATable V1.2 &copy; 2004-2006 <a href="http://face2interface.com">Face 2 Interface Inc.</a></p>
+</center>
+</body>
+</html>
