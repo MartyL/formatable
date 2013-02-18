@@ -9,6 +9,7 @@
 +   2004-03-25	Release 1.1                                                         +
 +   2004-04-23	Release 1.2                                                         +
 +   2006-07-09	Release 1.21   add support for Mysql DB, validate HTML              +
++   2013-02-18  Create on github                                                   +
 +                                                                                  +
 +  This software is distributed under the terms of the GNU Public License.         +
 +  See the License.txt file, included with the software. Among other things,       +
@@ -21,15 +22,6 @@
 +                                                                                  +
 *----------------------------------------------------------------------------------*
 
-Support is available on our bulletin board on the web at http://bbs.face2interface.com/.
-
-You may contact us through http://face2interface.com/Contact/Email_Us.shtml if you would 
-like to let us know that you're using the script. All support requests and questions should 
-go through the BBS.
-
-For more information about Face 2 Interface's products and other services, to 
-take a quiz, read a quote or play with our interactive features see us on the 
-web at http://www.face2interface.com/.
 
 
 Installing Manually:
